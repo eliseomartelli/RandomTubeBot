@@ -4,26 +4,47 @@ ___
 
 ## Setup
 
-1. Clone this repo.
-2. Get the Telegram Bot Api Key.
-3. Get the Youtube Data Api Key.
-4. Create a file named keys.js inside the root directory of this project.
-5. Edit the file like this:
-```javascript
+##### First things first
+To use this project you've to provide your Telegram Bot API key and your YouTube Data API key.
+
+You can get your keys by following these guides:
+1. [YouTube](https://developers.google.com/youtube/v3/getting-started)
+2. [Telegram](https://core.telegram.org/bots#6-botfather)
+
+##### Second things second
+Hey, you're kinda ready!
+
+Clone this repo and create a file named ```keys.js``` inside the repo's root, then open it in your text editor, and put this in your file:
+```js
 module.exports = {
-    telegramKey : "<TELEGRAM API KEY HERE>",
-    youtubeKey : "<YOUTUBE API KEY HERE>"
+    telegramKey : "<YOUR TELEGRAM API KEY HERE>",
+    youtubeKey : "<YOUR YOUTUBE API KEY HERE>"
 };
+
 ```
-6. Install the following dependencies:
+Remember to change the strings with your own keys 😎.
+
+##### Last things last
+Now you're ready to run the bot!
+
+1. Install the dependencies:
 ```
-npm install youtube-random-video
-npm install telegram-node-bot
+npm install
 ```
-7. Run the bot
+
+2. Run it!
 ```
-node index.js
+npm start
 ```
+
+Now you can test it locally or host it on a server.
+You can see a list of servers or other solutions to host it and get it to your users [here](https://github.com/python-telegram-bot/python-telegram-bot/wiki/Where-to-host-Telegram-Bots).
+
+If you like the idea and you want to get in touch with me send me an email here: 
+```
+me@eliseomartelli.it
+```
+or visit my [personal site](http://eliseomartelli.it). You can find my public profiles here.
 ___
 
 ## License
